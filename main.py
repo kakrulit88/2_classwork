@@ -30,7 +30,8 @@ class MyWidget(QMainWindow, Ui_MainWindow):
 
     def draw_flag(self, qp):
         qp.setBrush(QColor(randint(0, 255), randint(0, 255), randint(0, 255)))
-        qp.drawEllipse(randint(50, 300), randint(50, 300), randint(50, 300), randint(50, 300))
+        shirina = randint(50, 300)
+        qp.drawEllipse(randint(50, 300), randint(50, 300), shirina, shirina)
 
 
 def except_hook(cls, exception, traceback):
